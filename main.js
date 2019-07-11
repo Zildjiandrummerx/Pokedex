@@ -19120,17 +19120,14 @@ for (var i=0; i<data.results.length; i++) {
     */
 
     var main = document.getElementById('main')
-    main.append(div)
-    div.append(divCard)
-    div.append(img)
-    div.append(divBottom)
-    div.append(h2)
-    div.append(h4)
-    div.append(h4)
-    div.append(h4)
+    main.append(divCard)
+    divCard.append(img)
+    divCard.append(divBottom)
+    divBottom.append(h2)
+    divBottom.append(h4)
 
     img.setAttribute('src', element.sprites.normal)
     h2.innerHTML=element.name
-    h4.innerHTML=element.national_number
+    h4.innerHTML='National Dex#: '+element.national_number
     /* h4.innerHTML=element.type */
 }
