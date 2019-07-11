@@ -19106,7 +19106,7 @@ for (i=0; i<data.length; i++) {
     var h4 = document.createElement('h4').setAttribute("id", "pkmn_num")
 
     /*
-    var aBug = document.createElement('a');
+    var a = document.createElement('a');
     a.setAttribute("class", "type-icon");
     a.setAttribute("class", "type-bug");
     
