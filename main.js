@@ -19094,39 +19094,39 @@ var data = {
             "speed": 143
         }
     ]
-}
+};
 
-for (i=0; i<data.length; i++) {
-    var element = data[i]
+for (var i = 0; i < data.results.length; i++) {
+    var element = data.results[i];
 
-    var divCard = document.createElement('div').setAttribute("class", "card")
-    var img = document.createElement('img')
-    var divBottom = document.createElement('div').setAttribute("class", "bottom")
-    var h2 = document.createElement('h2').setAttribute("id", "pkmn_name")
-    var h4 = document.createElement('h4').setAttribute("id", "pkmn_num")
+    var divCard = document.createElement("div");
+    divCard.setAttribute("class", "card");
+    var img = document.createElement("img");
+    var divBottom = document.createElement("div");
+    divBottom.setAttribute("class", "bottom");
+    var h2 = document.createElement("h2");
+    h2.setAttribute("id", "pkmn_name");
+    var h4 = document.createElement("h4");
+    h4.setAttribute("id", "pkmn_num");
 
-    /*
-    var a = document.createElement('a');
-    a.setAttribute("class", "type-icon");
-    a.setAttribute("class", "type-bug");
-    
-    var a = document.createElement('a');
-    a.setAttribute("class", "type-icon");
-    a.setAttribute("class", "type-steel");
-    */
+    var main = document.getElementById("main");
+    main.append(divCard);
+    divCard.append(img);
+    divCard.append(divBottom);
+    divBottom.append(h2);
+    divBottom.append(h4);
 
-    var main = document.getElementById('main')
-    main.append(div)
-    div.append(divCard)
-    div.append(img)
-    div.append(divBottom)
-    div.append(h2)
-    div.append(h4)
-    div.append(h4)
-    div.append(h4)
+    for (var j=0; j<element.type.length; j++) {
+        var type = element.type[j];
+        var a = document.createElement('a');
+        a.setAttribute('href', '#');
+        a.classList.add("type-icon");
+        a.classList.add("type-" + type.toLowerCase());
+        a.innerText = type;
+        divBottom.appendChild(a);
+    }
 
-    img.setAttribute('src', element.sprites.normal)
-    h2.innerHTML=element.name
-    h4.innerHTML=element.national_number
-    /* h4.innerHTML=element.type */
+    img.setAttribute("src", element.sprites.normal);
+    h2.innerHTML = element.name;
+    h4.innerHTML = "National Dex#: " + element.national_number;
 }
