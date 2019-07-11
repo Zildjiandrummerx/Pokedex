@@ -1,0 +1,226 @@
+/* ===========================================================================
+
+    Table of Contents
+
+    1. Global Styles
+        1.0 - General
+        1.1 - CSS Reset
+    2. Elemental Type(s)
+        2.0 - Buttons Shape & Style
+        2.1 - Element by Color
+    3. Card Modal Design
+        3.0 - Card Container
+        3.1 - Pokemon Photo
+        3.2 - Card Text
+
+=========================================================================== */
+
+/* ===========================================================================
+    1. Global Styles
+=========================================================================== */
+
+/* ===== 1.0 - General ==================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ===== 1.1 - CSS Reset ================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+    border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-color: #622929;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ===========================================================================
+    2. Elemental Type(s)
+=========================================================================== */
+
+/* ===== 2.0 - Buttons Shape & Style ====================================== */
+
+.type-icon {
+    display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #dbdbdb;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid black;
+    color: #fff;
+    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    text-decoration: none;
+}
+
+/* ===== 2.1 - Element by Color ============================================== */
+
+.type-fire {
+    background-color: #f42;
+}
+
+.type-water {
+    background-color: #39f;
+}
+
+.type-electric {
+    background-color: #fc3;
+}
+
+.type-grass {
+    background-color: #7c5;
+}
+
+.type-ice {
+    background-color: #6cf;
+}
+
+.type-fighting {
+    background-color: #b54;
+}
+
+.type-poison {
+    background-color: #a59;
+}
+
+.type-ground {
+    background-color: #db5;
+}
+
+.type-flying {
+    background-color: #89f;
+}
+
+.type-psychic {
+    background-color: #f59;
+}
+
+.type-bug {
+    background-color: #ab2;
+}
+
+.type-rock {
+    background-color: #ba6;
+}
+
+.type-ghost {
+    background-color: #66b;
+}
+
+.type-dragon {
+    background-color: #76e;
+}
+
+.type-dark {
+    background-color: #754;
+}
+
+.type-steel {
+    background-color: #aab;
+}
+
+.type-fairy {
+    background-color: #e9e;
+}
+
+/* ===========================================================================
+    3. Card Modal Design
+=========================================================================== */
+
+/* ===== 3.0 - Card Container ============================================ */
+
+.card {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px 13px 10px 10px;
+    background-color: #d53939;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+/* ===== 3.1 - Pokemon Photo ============================================== */
+
+img {
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* ===== 3.2 - Card Text =================================================== */
+
+h2 {
+    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+.bottom {
+    background-color: #39394a;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-bottom: 3px;
+}
