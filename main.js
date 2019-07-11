@@ -19099,11 +19099,15 @@ var data = {
 for (var i=0; i<data.results.length; i++) {
     var element = data.results[i]
 
-    var divCard = document.createElement('div').setAttribute("class", "card")
+    var divCard = document.createElement('div')
+    divCard.setAttribute("class", "card")
     var img = document.createElement('img')
-    var divBottom = document.createElement('div').setAttribute("class", "bottom")
-    var h2 = document.createElement('h2').setAttribute("id", "pkmn_name")
-    var h4 = document.createElement('h4').setAttribute("id", "pkmn_num")
+    var divBottom = document.createElement('div')
+    divBottom.setAttribute("class", "bottom")
+    var h2 = document.createElement('h2')
+    h2.setAttribute("id", "pkmn_name")
+    var h4 = document.createElement('h4')
+    h4.setAttribute("id", "pkmn_num")
 
     /*
     var a = document.createElement('a');
