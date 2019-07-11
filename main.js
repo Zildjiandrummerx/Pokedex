@@ -19094,20 +19094,20 @@ var data = {
             "speed": 143
         }
     ]
-}
+};
 
-for (var i=0; i<data.results.length; i++) {
-    var element = data.results[i]
+for (var i = 0; i < data.results.length; i++) {
+    var element = data.results[i];
 
-    var divCard = document.createElement('div')
-    divCard.setAttribute("class", "card")
-    var img = document.createElement('img')
-    var divBottom = document.createElement('div')
-    divBottom.setAttribute("class", "bottom")
-    var h2 = document.createElement('h2')
-    h2.setAttribute("id", "pkmn_name")
-    var h4 = document.createElement('h4')
-    h4.setAttribute("id", "pkmn_num")
+    var divCard = document.createElement("div");
+    divCard.setAttribute("class", "card");
+    var img = document.createElement("img");
+    var divBottom = document.createElement("div");
+    divBottom.setAttribute("class", "bottom");
+    var h2 = document.createElement("h2");
+    h2.setAttribute("id", "pkmn_name");
+    var h4 = document.createElement("h4");
+    h4.setAttribute("id", "pkmn_num");
 
     /*
     var a = document.createElement('a');
@@ -19119,15 +19119,15 @@ for (var i=0; i<data.results.length; i++) {
     a.setAttribute("class", "type-steel");
     */
 
-    var main = document.getElementById('main')
-    main.append(divCard)
-    divCard.append(img)
-    divCard.append(divBottom)
-    divBottom.append(h2)
-    divBottom.append(h4)
+    var main = document.getElementById("main");
+    main.append(divCard);
+    divCard.append(img);
+    divCard.append(divBottom);
+    divBottom.append(h2);
+    divBottom.append(h4);
 
-    img.setAttribute('src', element.sprites.normal)
-    h2.innerHTML=element.name
-    h4.innerHTML='National Dex#: '+element.national_number
+    img.setAttribute("src", element.sprites.normal);
+    h2.innerHTML = element.name;
+    h4.innerHTML = "National Dex#: " + element.national_number;
     /* h4.innerHTML=element.type */
 }
