@@ -19096,8 +19096,8 @@ var data = {
     ]
 }
 
-for (i=0; i<data.length; i++) {
-    var element = data[i]
+for (i=0; i<data.results.length; i++) {
+    var element = data.results[i]
 
     var divCard = document.createElement('div').setAttribute("class", "card")
     var img = document.createElement('img')
