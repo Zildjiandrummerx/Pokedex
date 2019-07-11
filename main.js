@@ -19109,16 +19109,6 @@ for (var i = 0; i < data.results.length; i++) {
     var h4 = document.createElement("h4");
     h4.setAttribute("id", "pkmn_num");
 
-    /*
-    var a = document.createElement('a');
-    a.setAttribute("class", "type-icon");
-    a.setAttribute("class", "type-bug");
-    
-    var a = document.createElement('a');
-    a.setAttribute("class", "type-icon");
-    a.setAttribute("class", "type-steel");
-    */
-
     var main = document.getElementById("main");
     main.append(divCard);
     divCard.append(img);
@@ -19126,8 +19116,17 @@ for (var i = 0; i < data.results.length; i++) {
     divBottom.append(h2);
     divBottom.append(h4);
 
+    for (var j=0; j<element.type.length; j++) {
+        var type = element.type[j];
+        var a = document.createElement('a');
+        a.setAttribute('href', '#');
+        a.classList.add("type-icon");
+        a.classList.add("type-" + type.toLowerCase());
+        a.innerText = type;
+        divBottom.appendChild(a);
+    }
+
     img.setAttribute("src", element.sprites.normal);
     h2.innerHTML = element.name;
     h4.innerHTML = "National Dex#: " + element.national_number;
-    /* h4.innerHTML=element.type */
 }
